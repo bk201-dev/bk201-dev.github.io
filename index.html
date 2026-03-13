@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+       
+      <header class="header">
+
+    <a href="#home" class="logo">
+        Mohamed Reda <span>EZ-ZOUHRY</span>
+    </a>
+
+    <i class="bx bx-menu" id="menu-icon"></i>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Technologies</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="gradient-btn" onclick="openContactCard()">Contact Me</button>
+
+</header>
+
+<section class="home" id="home">
+    <div class="home-content">
+        <h1>Hi, I'm <span>Med Reda</span></h1>
+        <h3>
+            I'm an <span>Embedded Systems and Control Engineering Student</span>
+        </h3>
+        <p class="home-text">
+        Passionate about embedded systems, I enjoy designing projects that integrate hardware and software.
+        </p>
+
+        <p class="home-text">
+        Through self-initiated work and experimentation, I have developed practical skills and a deeper understanding of how embedded technologies are built and applied.
+        </p>
+
+        <div class="social-icons">
+            <a href="https://github.com/bk201-dev">
+                <i class="bx bxl-github"></i>
+            </a>
+
+            <a href="https://linkedin.com/in/mohamed-reda-ez-zouhry" target="_blank">
+                 <i class="bx bxl-linkedin-square"></i>
+            </a>
+
+             
+        </div>
+
+        <div class="btn-group">
+            
+            <a href="#contact"
+            class="btn">Contact</a>
+        </div>
+    </div>
+
+    <div class="home-img">
+      <img src="image.png" alt="">
+    </div>
+        
+    
+</section>
+
+<section class="about" id="about">
+
+    <div class="about-img">
+        <img src="image.png" alt="">
+    </div>
+
+   <div class="about-content">
+    <h2>About <span>Me</span></h2>
+
+    <p>I’m an Embedded Systems Engineering student passionate about designing innovative solutions that combine hardware and software. Through hands-on projects, I have gained practical experience developing efficient and functional embedded systems.</p>
+
+    <p>My strong interest in robotics and electronics has encouraged me to explore the potential of embedded technologies. I have built small robotic systems and experimented with programming and AI techniques to enhance their capabilities and interaction with real-world environments.</p>
+
+    <p>Working on these projects has helped me develop a solid understanding of how hardware and software integrate to create reliable and high-performance systems.</p>
+
+    <p>I’m always eager to apply my skills to meaningful projects related to embedded systems, robotics, and intelligent technologies. If you’re interested in collaboration or know of opportunities in this field, feel free to connect.</p>
+
+    <a href="#" class="btn">Read More</a>
+</div>
+
+</section>
+
+<section class="services" id="services">
+
+    <h2 class="heading">Technologies</h2>
+
+    <div class="services-container">
+
+        <div class="service-box">
+            <div class="service-info">
+                <i class="bx bx-microchip"></i>
+                <h4>Embedded Systems</h4>
+                
+                <div class="tech-stack">
+            <span>STM32 (Bare-Metal)</span>
+            <span>ESP32 (ESP-IDF)</span>
+            <span>Arduino</span>
+            <span>FreeRTOS</span>
+            <span>RISC-V (RV32I)</span>
+            <span>FPGA (Cyclone V SoC)</span>
+            <span>NIOS II</span>
+            <span>AWS IoT</span>
+            
+        </div>
+
+            </div>
+        </div>
+
+        <div class="service-box">
+            <div class="service-info">
+                <i class="bx bx-code-alt"></i>
+                <h4>Programming & Firmware</h4>
+                
+                  <div class="tech-stack">
+            <span>C / C++</span>
+            <span>Python</span>
+            <span>MATLAB</span>
+            <span>HTML / CSS</span>
+            <span>Assembly (RV32I)</span>
+            <span>VHDL</span>
+            <span>Verilog</span>
+            <span>SystemVerilog</span>
+            <span>CMake</span>
+            <span>Git</span>
+        </div>
+
+
+            </div>
+        </div>
+
+        <div class="service-box">
+            <div class="service-info">
+                <i class="bx bx-bot"></i>
+                <h4>Hardware Design, Simulation & Tools</h4>
+                
+                <div class="tech-stack">
+            <span>Altium Designer</span>
+            <span>EasyEDA</span>
+            <span>KiCad</span>
+            <span>PCB Routing</span>
+            <span>EMI / EMC</span>
+            <span>Quartus</span>
+            <span>ModelSim</span>
+            <span>Simulink</span>
+            <span>OpenOCD</span>
+            <span>CubeMX</span>
+        </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="projects" id="projects">
+
+    <h2 class="heading">Projects</h2>
+
+    <div class="projects-box">
+
+        <div class="project-card">
+            <img src="project1.png" alt="">
+
+            <h3>32-bit RISC-V Processor (RV32I) – SystemVerilog Implementation</h3>
+            <p>Designed and implemented a 32-bit RISC-V (RV32I) processor using a single-cycle RTL architecture in SystemVerilog. Implemented the datapath, ALU, and control unit, and validated the processor through ModelSim simulations by running machine-code programs.</p>
+            <div class="btn">Review Project</div>
+        </div>
+
+        <div class="project-card">
+            <img src="project2.png" alt="">
+
+            <h3>Autonomous Sumo Robot – PCB Design & Embedded Programming</h3>
+            <p>Designed and developed an autonomous sumo robot featuring custom PCB design in KiCad, embedded firmware on Arduino Nano, and 3D chassis modeling. Integrated sensors through various communication protocols and implemented motor control and opponent detection algorithms.</p>
+            <div class="btn">Review Project</div>
+        </div>
+
+        <div class="project-card">
+            <img src="project3.png" alt="">
+
+            <h3>Multilayer PCB Design – Altium Designer</h3>
+            <p>Designed mixed multilayer PCBs in Altium Designer integrating STM32, Ethernet PHY, ADC/DAC, and motor drivers. Defined the board stack-up, performed PDN analysis, implemented high-density routing, and applied EMI/EMC design practices for reliable high-speed hardware design.</p>
+            <div class="btn">Review Project</div>
+        </div>
+
+        <div class="project-card">
+            <img src="project4.jpg" alt="">
+
+            <h3>FPGA & VHDL Digital Systems</h3>
+            <p>Designed and simulated digital circuits on a Cyclone V SoC FPGA using Quartus and ModelSim. Implemented arithmetic units, finite state machines (FSM), and simple processors in VHDL, along with software development in C for the NIOS II soft-core processor.</p>
+            <div class="btn">Review Project</div>
+        </div>
+
+        <div class="project-card">
+            <img src="project5.png" alt="">
+
+            <h3>ESP32 WiFi IoT Application for AWS Cloud Integration</h3>
+            <p>Developed an embedded IoT system on ESP32 using ESP-IDF in C, integrating a multitasking architecture based on FreeRTOS and cloud connectivity via AWS IoT Core using the MQTT protocol. Implemented WiFi connectivity, an embedded HTTP server, and advanced features including OTA firmware updates and NVS storage.</p>
+            <div class="btn">Review Project</div>
+        </div>
+
+        <div class="project-card">
+            <img src="project6.png" alt="">
+
+            <h3>Industrial PLC Supervision with HMI</h3>
+            <p>Designed an HMI using RSView32 to supervise an automated industrial process (preparation, filling, capping, and packaging) controlled by a PLC. Integrated communication through RSLinx and implemented operator control and real-time system monitoring.</p>
+            <div class="btn">Review Project</div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+
+    <form action="https://formspree.io/f/mlgpnopv" method="POST">
+
+    <div class="input-group">
+
+        <div class="input-box">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+        </div>
+
+        <div class="input-box">
+            <input type="number" name="phone" placeholder="Phone Number">
+            <input type="text" name="subject" placeholder="Subject">
+        </div>
+
+    </div>
+
+    <div class="input-group-2">
+        <textarea name="message" placeholder="Your Message" cols="30" rows="10" required></textarea>
+        <input type="submit" value="Send Message" class="btn">
+    </div>
+
+</form>
+</section>
+
+<footer class="footer">
+
+    <div class="social-icons">
+        <a href="https://github.com/bk201-dev">
+            <i class="bx bxl-github"></i>
+        </a>
+
+        <a href="https://linkedin.com/in/mohamed-reda-ez-zouhry">
+            <i class="bx bxl-linkedin-square"></i>
+        </a>
+
+        
+    </div>
+
+    <ul class="list">
+    <li>
+        <a href="#">FAQ</a>
+    </li>
+
+    <li>
+        <a href="#services">Services</a>
+    </li>
+
+    <li>
+        <a href="#about">About Me</a>
+    </li>
+
+    <li>
+        <a href="#projects">Projects</a>
+    </li>
+ 
+    <li>
+        <a href="#contact">Contact</a>
+    </li>
+</ul>
+
+<p class="copyright">
+    © Mohamed Reda Ez-zouhry | All Rights Reserved
+</p>
+
+</footer>
+
+
+   <div class="contact-card" id="contactCard">
+    <div class="contact-card-content">
+        <span class="close-card" onclick="closeContactCard()">&times;</span>
+
+        <i class='bx bx-user-circle'></i>
+        <h3>Contact Me</h3>
+
+        <p class="contact-line">
+            <a href="tel:+212642715574">
+                <i class='bx bx-phone-call'></i> +212 642 715 574
+            </a>
+        </p>
+
+        <p class="contact-line">
+            <a href="mailto:m.reda.ezzouhry@gmail.com">
+                <i class='bx bx-envelope'></i> m.reda.ezzouhry@gmail.com
+            </a>
+        </p>
+    </div>
+</div> 
+
+    <script src="script.js"></script>
+  </body>
+</html>
