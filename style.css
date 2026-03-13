@@ -599,6 +599,22 @@ section{
     .contact form{
         flex-direction: column;
     }
+    .tech-stack{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.tech-stack span{
+    font-size: 1.2rem;
+    padding: 0.6rem 1rem;
+    max-width: 100%;
+    text-align: center;
+    white-space: normal;
+    word-break: break-word;
+}
 }
 
 
