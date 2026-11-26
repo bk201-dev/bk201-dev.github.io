@@ -12,405 +12,1241 @@
   </head>
   <body>
        
-      <header class="header">
+      
+<header class="header" id="header">
 
     <a href="#home" class="logo">
-        Mohamed Reda <span>EZ-ZOUHRY</span>
+        MR<span>.</span>
+        <small>ENGINEER</small>
     </a>
 
-    <i class="bx bx-menu" id="menu-icon"></i>
-
-    <nav class="navbar">
-        <a href="#home">Home</a>
+    <nav class="navbar" id="navbar">
+        <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
+        <a href="#journey">Journey</a>
         <a href="#services">Technologies</a>
         <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
     </nav>
 
-    <button class="gradient-btn" onclick="openContactCard()">Contact Me</button>
+    <button class="gradient-btn" onclick="openContactCard()">
+        Let's talk
+        <i class="bx bx-up-arrow-alt"></i>
+    </button>
+
+    <button id="menu-icon"
+            class="bx bx-menu"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            aria-controls="navbar">
+    </button>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
 
 </header>
 
+
+
+<!-- ======================================
+     HOME — ENGINEERING BEYOND ABSTRACTIONS
+     ====================================== -->
+
 <section class="home" id="home">
 
-    <div class="home-content">
+    <div class="hero-grid"></div>
+    <div class="hero-ambient"></div>
 
-        <h1>Hi, I'm <span>Med Reda</span></h1>
+    <div class="hero-container">
 
-        <h3>
-            I'm an <span>Embedded Systems and Control Engineering Student</span>
-        </h3>
+        <div class="hero-content">
 
-        <p class="home-text">
-            Passionate about embedded systems, I enjoy designing projects that integrate hardware and software.
-        </p>
+            <div class="hero-index">
+                <span class="index-line"></span>
+                01 / INTRODUCTION
+            </div>
 
-        <p class="home-text">
-            Through self-initiated work and experimentation, I have developed practical skills and a deeper understanding of how embedded technologies are built and applied.
-        </p>
+            <div class="hero-intro">
+                Hi, I'm Mohamed Reda (مُـحَـمَّـد رِضَـا)
+            </div>
 
-        <div class="social-icons">
+            <h1 class="hero-title">
+                Engineering<br>
+                beyond the<br>
+                <span>abstraction</span>
+            </h1>
 
-            <a href="https://github.com/bk201-dev">
-                <i class="bx bxl-github"></i>
-            </a>
+            <p class="hero-description">
+                Final year Embedded Systems & Control
+                Engineering student. Exploring the intersection
+                of electronics, embedded software and
+                digital architectures.
+            </p>
 
-            <a href="https://linkedin.com/in/mohamed-reda-ez-zouhry" target="_blank">
-                <i class="bx bxl-linkedin-square"></i>
-            </a>
+            <div class="hero-actions">
+
+                <a href="#projects" class="hero-primary">
+                    Explore my work
+                    <i class="bx bx-up-arrow-alt"></i>
+                </a>
+
+                <a href="Mohamed_Reda_EZ-ZOUHRY_CV_English_Original_Design.pdf"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="hero-secondary">
+                    View résumé
+                    <i class="bx bx-file"></i>
+                </a>
+
+            </div>
+
+            <div class="hero-availability">
+                <span class="status-dot"></span>
+                Available for PFE · February 2027
+            </div>
+
+            <div class="hero-socials">
+
+                <a href="https://github.com/bk201-dev"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="GitHub">
+                    <i class="bx bxl-github"></i>
+                </a>
+
+                <a href="https://linkedin.com/in/mohamed-reda-ez-zouhry"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="LinkedIn">
+                    <i class="bx bxl-linkedin-square"></i>
+                </a>
+
+            </div>
 
         </div>
 
-        <div class="btn-group">
+        <div class="hero-visual">
 
-            <a href="#projects" class="btn">Explore my work</a>
+            <div class="visual-frame">
 
-            <a href="#contact" class="btn">Contact</a>
+                <div class="visual-header">
+                    <div class="visual-label">
+                        <span class="visual-dot"></span>
+                        IDENTITY_MODULE
+                    </div>
+                    <span>REV.01</span>
+                </div>
+
+                <div class="visual-body">
+
+                    <div class="visual-grid"></div>
+
+                    <div class="orbit orbit-outer"></div>
+                    <div class="orbit orbit-middle"></div>
+                    <div class="orbit orbit-inner"></div>
+
+                    <div class="visual-crosshair crosshair-tl">+</div>
+                    <div class="visual-crosshair crosshair-tr">+</div>
+                    <div class="visual-crosshair crosshair-bl">+</div>
+                    <div class="visual-crosshair crosshair-br">+</div>
+
+                    <span class="visual-coordinate coordinate-top">
+                        X: 01.00
+                    </span>
+
+                    <span class="visual-coordinate coordinate-bottom">
+                        Y: 02.00
+                    </span>
+
+                    <img src="MR.png"
+                         alt="Mohamed Reda personal engineering logo"
+                         class="hero-identity">
+
+                    <div class="scan-line"></div>
+
+                </div>
+
+                <div class="visual-footer">
+                    <div>
+                        <span class="visual-caption">DISCIPLINE</span>
+                        <strong>Hardware × Software</strong>
+                    </div>
+
+                    <i class="bx bx-microchip"></i>
+                </div>
+
+            </div>
+
+            
 
         </div>
 
     </div>
 
-    <div class="home-img">
-        <img src="MR.png" alt="">
+    <div class="hero-bottom">
+
+        <a href="#about" class="hero-scroll">
+            <span class="scroll-mouse"></span>
+            SCROLL TO EXPLORE
+        </a>
+
+        <div class="hero-system">
+            <span class="system-dot"></span>
+            SYSTEM.ONLINE
+        </div>
+
     </div>
 
 </section>
+
+
+
+<!-- ABOUT -->
 
 <section class="about" id="about">
 
-    <div class="about-img">
-        <img src="profile_pic.png" alt="">
+    <div class="about-shell">
+
+        <div class="section-intro reveal">
+            <h2 class="section-title">
+                About <span>me</span>
+            </h2>
+        </div>
+
+        <div class="about-bento">
+
+            <!-- Portrait -->
+
+            <article class="bento-card portrait-card reveal">
+
+                <div class="portrait-image">
+
+                    <img src="profile_pic.png"
+                         alt="Mohamed Reda Ez-Zouhry"
+                         loading="lazy">
+
+                    <div class="portrait-overlay"></div>
+
+                    <div class="portrait-location">
+                        <i class="bx bx-map"></i>
+                        Morocco
+                    </div>
+
+                </div>
+
+                <div class="portrait-info">
+
+                    <h3>
+                        Mohamed Reda<br>
+                        <span>EZ-ZOUHRY</h3>
+                    </h3>
+
+                    <p>Engineering Student · ENSA Marrakech</p>
+
+                </div>
+
+            </article>
+
+            <!-- Personal introduction -->
+
+            <article class="bento-card philosophy-card reveal">
+
+                <div class="philosophy-content">
+
+                    <h3>A little about me</h3>
+
+                    <p>
+                        I enjoy understanding how things work
+                        and turning that knowledge into real
+                        engineering projects.
+                    </p>
+
+                    <p>
+                        My interests lie in electronics,
+                        embedded software and digital design,
+                        with a particular curiosity for how
+                        hardware and software interact.
+                    </p>
+
+                    <p>
+                        I learn by building, experimenting
+                        and continuously challenging myself
+                        with new engineering problems.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <!-- Current interests -->
+
+            <article class="bento-card focus-card reveal">
+
+                <div class="focus-status">
+                    <span class="status-dot"></span>
+                    Currently exploring
+                </div>
+
+                <h3>Digital design & silicon</h3>
+
+                <p>
+                    Expanding my knowledge of RTL design,
+                    FPGA prototyping and ASIC development.
+                </p>
+
+                <div class="focus-tags">
+                    <span>RTL</span>
+                    <span>FPGA</span>
+                    <span>ASIC</span>
+                    <span>SoC</span>
+                </div>
+
+            </article>
+
+            <!-- Interactive engineering map -->
+
+            
+<article class="bento-card interests-card reveal">
+
+    <h3 class="about-card-title">Areas of interest</h3>
+
+    <div class="interest-panels">
+
+        <button type="button"
+                class="interest-panel active"
+                aria-expanded="true">
+
+            <i class="bx bx-chip interest-icon"></i>
+
+            <h4>Hardware</h4>
+
+            <div class="interest-details">
+
+                <h3>Hardware Engineering</h3>
+
+                <p>
+                    Electronic design, multilayer PCBs
+                    and signal integrity.
+                </p>
+
+                <div class="interest-tags">
+                    <span>Altium</span>
+                    <span>PCB Design</span>
+                    <span>STM32</span>
+                </div>
+
+            </div>
+
+        </button>
+
+        <button type="button"
+                class="interest-panel"
+                aria-expanded="false">
+
+            <i class="bx bx-code-alt interest-icon"></i>
+
+            <h4>Firmware</h4>
+
+            <div class="interest-details">
+
+                <h3>Embedded Firmware</h3>
+
+                <p>
+                    Embedded programming, real-time
+                    systems and communication.
+                </p>
+
+                <div class="interest-tags">
+                    <span>C/C++</span>
+                    <span>FreeRTOS</span>
+                    <span>STM32</span>
+                </div>
+
+            </div>
+
+        </button>
+
+        <button type="button"
+                class="interest-panel"
+                aria-expanded="false">
+
+            <i class="bx bx-microchip interest-icon"></i>
+
+            <h4>Digital Design</h4>
+
+            <div class="interest-details">
+
+                <h3>Digital Design & Architecture</h3>
+
+                <p>
+                    RTL design, processor architectures,
+                    FPGA prototyping and ASIC development.
+                </p>
+
+                <div class="interest-tags">
+                    <span>SystemVerilog</span>
+                    <span>RISC-V</span>
+                    <span>FPGA</span>
+                    <span>ASIC</span>
+                </div>
+
+            </div>
+
+        </button>
+
+        <button type="button"
+                class="interest-panel"
+                aria-expanded="false">
+
+            <i class="bx bx-bot interest-icon"></i>
+
+            <h4>Robotics</h4>
+
+            <div class="interest-details">
+
+                <h3>Robotics & Control</h3>
+
+                <p>
+                    Connecting mathematical models,
+                    control systems and physical motion.
+                </p>
+
+                <div class="interest-tags">
+                    <span>ROS</span>
+                    <span>MATLAB</span>
+                    <span>Kinematics</span>
+                </div>
+
+            </div>
+
+        </button>
+
     </div>
 
-   <div class="about-content">
-    <h2>About <span>Me</span></h2>
+</article>
 
-    <p>I build systems where code eventually has to move something, measure something, communicate with something — or fail in the real world.</p>
 
-    <p>My projects move between PCB design, embedded firmware, FPGA/digital design, robotics and edge intelligence, with one recurring obsession: understanding what happens below the abstraction layer.</p>
+        </div>
 
-    <p>From custom STM32 boards and autonomous robots to RISC-V cores, FreeRTOS applications and industrial control systems, I use each project as a way to explore how hardware, software and physical behavior meet.</p>
-
-    <p>That intersection is where I want to keep working.</p>
-
-    <a href="Mohamed_Reda_EZ-ZOUHRY_CV_English_Original_Design.pdf" target="_blank" class="btn">
-    View CV
-    </a>
-</div>
+    </div>
 
 </section>
+
+
+<!-- ======================================
+     EXPERIENCE & EDUCATION
+     ====================================== -->
+
+<section class="journey" id="journey">
+
+    <div class="journey-shell">
+
+        <div class="section-intro reveal">
+            <h2 class="section-title">
+                Experience & <span>Education</span>
+            </h2>
+        </div>
+
+        <div class="journey-grid">
+
+            <!-- PROFESSIONAL EXPERIENCE -->
+
+            <div class="journey-column reveal">
+
+                <div class="journey-heading">
+                    <i class="bx bx-briefcase"></i>
+                    <h3>Experience</h3>
+                </div>
+
+                <div class="journey-timeline">
+
+                    <!-- ELECT-CAD -->
+
+                    <details class="journey-item" open>
+
+                        <summary class="journey-summary">
+
+                            <div class="journey-logo">
+                                <img src="logos/electcad.png"
+                                     alt="Elect-Cad Company"
+                                     loading="lazy">
+                            </div>
+
+                            <div class="journey-info">
+
+                                <span class="journey-date">
+                                    July — september 2026
+                                </span>
+
+                                <h3>Elect-Cad Company</h3>
+
+                                <p>
+                                    Embedded Hardware Engineering Intern
+                                </p>
+
+                            </div>
+
+                            <i class="bx bx-plus journey-toggle"></i>
+
+                        </summary>
+
+                        <div class="journey-body">
+
+                            <div class="journey-location">
+                                <i class="bx bx-map"></i>
+                                Casablanca, Morocco
+                            </div>
+
+                            <p>
+                                Developed EdgeGuard, an industrial
+                                embedded monitoring and communication
+                                platform for electrical distribution
+                                systems.
+                            </p>
+
+                            <p>
+                                Worked on hardware architecture,
+                                schematic design and multilayer PCB
+                                layout, addressing power integrity,
+                                isolation and communication interfaces.
+                            </p>
+
+                            <div class="journey-tags">
+                                <span>Altium Designer</span>
+                                <span>STM32</span>
+                                <span>PCB Design</span>
+                                <span>RS-485</span>
+                                <span>LTE</span>
+                            </div>
+
+                            <a class="journey-link"
+                               href="https://github.com/bk201-dev/industrial-edge-monitoring-platform"
+                               target="_blank"
+                               rel="noopener noreferrer">
+
+                                Explore EdgeGuard
+                                <i class="bx bx-up-arrow-alt"></i>
+
+                            </a>
+
+                        </div>
+
+                    </details>
+
+                    <!-- SRM -->
+
+                    <details class="journey-item">
+
+                        <summary class="journey-summary">
+
+                            <div class="journey-logo">
+                                <img src="logos/srm.png"
+                                     alt="SRM Marrakech-Safi"
+                                     loading="lazy">
+                            </div>
+
+                            <div class="journey-info">
+
+                                <span class="journey-date">
+                                    July — August 2025
+                                </span>
+
+                                <h3>SRM Marrakech-Safi</h3>
+
+                                <p>
+                                    Industrial Automation Intern
+                                </p>
+
+                            </div>
+
+                            <i class="bx bx-plus journey-toggle"></i>
+
+                        </summary>
+
+                        <div class="journey-body">
+
+                            <div class="journey-location">
+                                <i class="bx bx-map"></i>
+                                Marrakech, Morocco
+                            </div>
+
+                            <p>
+                                Explored industrial automation,
+                                electrical distribution and
+                                protection systems within
+                                an operational environment.
+                            </p>
+
+                            <p>
+                                Studied PLC-based systems,
+                                transformer substations and
+                                industrial electrical installations.
+                            </p>
+
+                            <div class="journey-tags">
+                                <span>PLC</span>
+                                <span>Automation</span>
+                                <span>Electrical Distribution</span>
+                            </div>
+
+                        </div>
+
+                    </details>
+
+                </div>
+
+            </div>
+
+            <!-- EDUCATION -->
+
+            <div class="journey-column reveal">
+
+                <div class="journey-heading">
+                    <i class="bx bxs-graduation"></i>
+                    <h3>Education</h3>
+                </div>
+
+                <div class="journey-timeline">
+
+                    <!-- ENGINEERING DEGREE -->
+
+                    <details class="journey-item" open>
+
+    <summary class="journey-summary">
+
+        <div class="journey-logo">
+            <img src="logos/ensa-marrakech.png"
+                 alt="ENSA Marrakech"
+                 loading="lazy">
+        </div>
+
+        <div class="journey-info">
+
+            <span class="journey-date">
+                2023 — Present
+            </span>
+
+            <h3>ENSA Marrakech</h3>
+
+            <p>Preparatory Cycle — Second Year & Engineering Degree</p>
+
+        </div>
+
+        <i class="bx bx-plus journey-toggle"></i>
+
+    </summary>
+
+    <div class="journey-body">
+
+    <div class="journey-location">
+        <i class="bx bx-map"></i>
+        Marrakech, Morocco
+    </div>
+
+    <div class="academic-timeline">
+
+        <div class="academic-step current">
+
+            <span class="academic-date">
+                2024 — Present
+            </span>
+
+            <h4>Engineering Cycle</h4>
+
+            <p class="academic-specialization">
+                Embedded Electronic Systems & Control
+            </p>
+
+            <p>
+                Electronics, embedded systems, digital design,
+                robotics and control engineering.
+            </p>
+
+        </div>
+
+        <div class="academic-step">
+
+            <span class="academic-date">
+                2023 — 2024
+            </span>
+
+            <h4>Preparatory Cycle — Second Year</h4>
+
+            <p>
+                Mathematics, physics and engineering
+                fundamentals.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="journey-tags">
+        <span>Embedded Systems</span>
+        <span>Electronics</span>
+        <span>Digital Design</span>
+        <span>Control Systems</span>
+    </div>
+
+</div>
+
+</details>
+
+                    
+
+                    <!-- CP1 -->
+
+                    <details class="journey-item">
+
+                        <summary class="journey-summary">
+
+                            <div class="journey-logo">
+                                <img src="logos/ensa-safi.png"
+                                     alt="ENSA Safi"
+                                     loading="lazy">
+                            </div>
+
+                            <div class="journey-info">
+
+                                <span class="journey-date">
+                                    2022 — 2023
+                                </span>
+
+                                <h3>ENSA Safi</h3>
+
+                                <p>Preparatory Cycle — First Year</p>
+
+                            </div>
+
+                            <i class="bx bx-plus journey-toggle"></i>
+
+                        </summary>
+
+                        <div class="journey-body">
+
+                            <div class="journey-location">
+                                <i class="bx bx-map"></i>
+                                Safi, Morocco
+                            </div>
+
+                            <p>
+                                First year of engineering studies,
+                                building a foundation in mathematics,
+                                physics and engineering sciences.
+                            </p>
+
+                        </div>
+
+                    </details>
+
+                    <!-- BACCALAUREATE -->
+
+                    <details class="journey-item">
+
+                        <summary class="journey-summary">
+
+                            <div class="journey-logo">
+                                <img src="logos/lycee-arganier.png"
+                                     alt="Lycée Arganier"
+                                     loading="lazy">
+                            </div>
+
+                            <div class="journey-info">
+
+                                <span class="journey-date">
+                                    2022
+                                </span>
+
+                                <h3>Lycée Arganier</h3>
+
+                                <p>Baccalaureate</p>
+
+                            </div>
+
+                            <i class="bx bx-plus journey-toggle"></i>
+
+                        </summary>
+
+                        <div class="journey-body">
+
+                            <div class="journey-location">
+                                <i class="bx bx-map"></i>
+                                Marrakech, Morocco
+                            </div>
+
+                            <p>
+                                High school education and
+                                baccalaureate diploma.
+                            </p>
+
+                        </div>
+
+                    </details>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- TECHNOLOGIES -->
 
 <section class="services" id="services">
 
-    <h2 class="heading">Technologies</h2>
+    <div class="technologies-shell">
 
-    <div class="services-container">
-
-        <div class="service-box">
-            <div class="service-info">
-                <i class="bx bx-microchip"></i>
-                <h4>Embedded Systems</h4>
-                
-                <div class="tech-stack">
-                <span>STM32 (Cortex-M)</span>
-<span>ESP32 (ESP-IDF)</span>
-<span>PIC Microcontrollers</span>
-<span>Arduino / ATmega</span>
-
-<span>FreeRTOS</span>
-<span>ROS Noetic</span>
-
-<span>RISC-V RV32I</span>
-<span>FPGA — Cyclone V SoC</span>
-<span>NIOS II Soft-Core</span>
-
-<span>TI C6000 DSP</span>
-
-<span>AWS IoT Core</span>
-<span>Edge AI</span>
-            
+        <div class="section-intro reveal">
+            <h2 class="technology-title">
+                Technologies<span>.</span>
+            </h2>
         </div>
+
+        <div class="technology-browser reveal">
+
+            <div class="technology-nav"
+                 role="group"
+                 aria-label="Technology categories">
+
+                <button type="button"
+                        class="technology-tab active"
+                        data-category="embedded"
+                        aria-pressed="true">
+
+                    <i class="bx bx-chip"></i>
+                    <span>Embedded Systems</span>
+                    <i class="bx bx-chevron-right"></i>
+
+                </button>
+
+                <button type="button"
+                        class="technology-tab"
+                        data-category="hardware"
+                        aria-pressed="false">
+
+                    <i class="bx bx-layer"></i>
+                    <span>Hardware Design</span>
+                    <i class="bx bx-chevron-right"></i>
+
+                </button>
+
+                <button type="button"
+                        class="technology-tab"
+                        data-category="digital"
+                        aria-pressed="false">
+
+                    <i class="bx bx-microchip"></i>
+                    <span>Digital Design</span>
+                    <i class="bx bx-chevron-right"></i>
+
+                </button>
+
+                <button type="button"
+                        class="technology-tab"
+                        data-category="programming"
+                        aria-pressed="false">
+
+                    <i class="bx bx-code-alt"></i>
+                    <span>Programming</span>
+                    <i class="bx bx-chevron-right"></i>
+
+                </button>
+
+                <button type="button"
+                        class="technology-tab"
+                        data-category="robotics"
+                        aria-pressed="false">
+
+                    <i class="bx bx-bot"></i>
+                    <span>Robotics & AI</span>
+                    <i class="bx bx-chevron-right"></i>
+
+                </button>
 
             </div>
-        </div>
 
-        <div class="service-box">
-            <div class="service-info">
-                <i class="bx bx-code-alt"></i>
-                <h4>Programming & Firmware</h4>
-                
-                  <div class="tech-stack">
-            <span>C / C++</span>
-<span>Python</span>
-<span>MATLAB</span>
-<span>HTML / CSS</span>
+            <div class="technology-content"
+                 aria-live="polite">
 
-<span>RISC-V Assembly</span>
-<span>TI C6000 Assembly</span>
+                <div class="technology-content-header">
 
-<span>VHDL</span>
-<span>Verilog</span>
-<span>SystemVerilog</span>
+                    <h3 id="technologyTitle">
+                        Embedded Systems
+                    </h3>
 
-<span>CMake</span>
-<span>Git</span>
-<span>Bash / Linux Shell</span>
+                    <p id="technologyDescription">
+                        Microcontrollers, real-time systems
+                        and connected devices.
+                    </p>
 
-<span>Flask</span>
-<span>OpenCV</span>
-<span>TensorFlow / Keras</span>
-        </div>
+                </div>
 
+                <div class="technology-grid"
+                     id="technologyGrid">
+
+                    <!-- Generated by JavaScript -->
+
+                </div>
 
             </div>
-        </div>
 
-        <div class="service-box">
-            <div class="service-info">
-                <i class="bx bx-bot"></i>
-                <h4>Hardware Design, Simulation & Tools</h4>
-                
-                <div class="tech-stack">
-            <span>Altium Designer</span>
-<span>KiCad</span>
-<span>EasyEDA</span>
-<span>Proteus</span>
-
-<span>PCB Routing</span>
-<span>PCB Stack-Up</span>
-<span>High-Speed Routing</span>
-<span>PDN Analysis</span>
-<span>Signal Integrity</span>
-<span>EMI / EMC</span>
-<span>DFM / DRC</span>
-
-<span>Quartus</span>
-<span>ModelSim</span>
-<span>Logisim</span>
-
-<span>STM32CubeMX</span>
-<span>STM32CubeIDE</span>
-<span>Code Composer Studio</span>
-<span>OpenOCD</span>
-
-<span>Simulink</span>
-<span>SnapEDA</span>
-<span>VS Code</span>
-        </div>
-
-            </div>
         </div>
 
     </div>
 
 </section>
+
+
+
+<!-- PROJECTS -->
 
 <section class="projects" id="projects">
 
-    <h2 class="heading">Projects</h2>
+    <div class="projects-shell">
 
-    <div class="projects-box">
-
-        <div class="project-card">
-            <img src="project1.png" alt="">
-
-            <h3>32-bit RISC-V Processor (RV32I) – SystemVerilog Implementation</h3>
-            <p>From raw machine code to a working processor. This RV32I core brings together instruction fetch, decoding, register operations, ALU execution, memory access and branching inside a complete single-cycle architecture written in SystemVerilog.</p>
-            <a href="https://github.com/bk201-dev/riscv-rv32i-single-cycle-cpu"
-       class="btn"
-       target="_blank"
-       rel="noopener noreferrer">
-        Review Project
-    </a>
+        <div class="section-intro reveal">
+            <h2 class="projects-title">
+                Projects<span>.</span>
+            </h2>
         </div>
 
-        <div class="project-card">
-            <img src="project2.png" alt="">
+        <div class="project-filters reveal"
+             role="group"
+             aria-label="Filter projects">
 
-            <h3>Autonomous Sumo Robot – PCB Design & Embedded Programming</h3>
-            <p>HAKUHO turns sensor data into movement in milliseconds — spotting opponents, detecting the ring edge and commanding both motors through a custom STM32-based control board built specifically for autonomous sumo combat.</p>
-            <a href="https://github.com/bk201-dev/HAKUHO-Hardware"
-       class="btn"
-       target="_blank"
-       rel="noopener noreferrer">
-        Review Project
-    </a>
+            <button class="project-filter active"
+                    data-filter="all"
+                    aria-pressed="true">
+                All
+            </button>
+
+            <button class="project-filter"
+                    data-filter="hardware"
+                    aria-pressed="false">
+                Hardware
+            </button>
+
+            <button class="project-filter"
+                    data-filter="digital"
+                    aria-pressed="false">
+                Digital Design
+            </button>
+
+            <button class="project-filter"
+                    data-filter="embedded"
+                    aria-pressed="false">
+                Embedded Systems
+            </button>
+
+            <button class="project-filter"
+                    data-filter="robotics"
+                    aria-pressed="false">
+                Robotics & Control
+            </button>
+
         </div>
 
-        <div class="project-card">
-            <img src="fusion.png" alt="">
+        <div class="project-gallery reveal">
 
-            <h3>FusionCore-MX – Altium Designer</h3>
-            <p>A playground for serious hardware design. FusionCore-MX brings STM32 processing, Ethernet, mixed-signal acquisition and motor control onto a dense multilayer PCB, with the focus pushed beyond connectivity into stack-up planning, PDN behavior, high-speed routing and EMI-aware layout.</p>
-            <a href="https://github.com/bk201-dev/FusionCore-MX"
-       class="btn"
-       target="_blank"
-       rel="noopener noreferrer">
-        Review Project
-    </a>
-        </div>
+            <!-- Selected project -->
 
-        <div class="project-card">
-            <img src="project4.jpg" alt="">
+            <article class="featured-project"
+                     id="featuredProject">
 
-            <h3>FPGA & VHDL Digital Systems</h3>
-            <p>From RTL to a programmable system. This work explores arithmetic logic, FSMs and processor-style architectures in VHDL, then bridges hardware and software through a NIOS II soft-core running C on FPGA.</p>
-            <a href="https://github.com/xxx/xxx"
-       class="btn"
-       target="_blank"
-       rel="noopener noreferrer">
-        Review Project
-    </a>
-        </div>
+                <div class="featured-image">
 
-        <div class="project-card">
-            <img src="project5.png" alt="">
+                    <img id="featuredImage"
+                         src="project7.png"
+                         alt="EdgeGuard PCB">
 
-            <h3>ESP32 WiFi IoT Application for AWS Cloud Integration</h3>
-            <p>From sensor data to the cloud. This ESP32 platform combines FreeRTOS multitasking, WiFi, MQTT and AWS IoT Core with an embedded web server, OTA updates and persistent storage to create a complete connected-device firmware architecture.</p>
-            <a href="https://github.com/xxx/xxx"
-       class="btn"
-       target="_blank"
-       rel="noopener noreferrer">
-        Review Project
-    </a>
-        </div>
+                </div>
 
-        <div class="project-card">
-            <img src="project6.png" alt="">
+                <div class="featured-content">
 
-            <h3>Industrial PLC Supervision with HMI</h3>
-            <p>From ladder logic to a moving production line. The project recreates an automated mixing, filling, capping and packaging process using RSLogix 500, RSLogix Emulate 500, RSLinx and an interactive RSView32 supervision interface.</p>
-            <a href="https://github.com/bk201-dev/Industrial-Control-HMI-PLC"
-       class="btn"
-       target="_blank"
-       rel="noopener noreferrer">
-        Review Project
-    </a>
-        </div>
+                    <div class="featured-meta">
 
-      <div class="project-card">
-            <img src="project7.png" alt="">
+                        <span id="featuredCategory">
+                            Hardware Design
+                        </span>
 
-            <h3>EdgeGuard – Industrial Embedded Monitoring</h3>
-            <p>From system requirements to a real manufactured board. EdgeGuard brings STM32 processing, isolated RS485/Modbus, LTE, GNSS and fault monitoring together on a 4-layer PCB designed around power, isolation, RF and real-world constraints.</p>
-            <a href="https://github.com/bk201-dev/industrial-edge-monitoring-platform"
-       class="btn"
-       target="_blank"
-       rel="noopener noreferrer">
-        Review Project
-    </a>
-        </div>
+                        <span id="featuredStatus"
+                              class="featured-status">
+                        </span>
 
-      <div class="project-card">
-            <img src="project8.png" alt="">
+                    </div>
 
-            <h3>Frame2Motion — Robotic Arm Control Stack</h3>
-            <p>An evolving ROS robotic arm project where geometry becomes movement. Frame2Motion connects kinematics, URDF/Xacro modeling, Gazebo simulation and ROS control with Arduino-driven servo actuation, following the complete path from coordinate frames to physical motion.</p>
-            <a href="https://github.com/bk201-dev/frame2motion"
-       class="btn"
-       target="_blank"
-       rel="noopener noreferrer">
-        Review Project
-    </a>
+                    <h3 id="featuredTitle">
+                        EdgeGuard
+                    </h3>
+
+                    <p id="featuredDescription"></p>
+
+                    <div class="featured-tags"
+                         id="featuredTags">
+                    </div>
+
+                    <a id="featuredLink"
+                       class="featured-link"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        <i class="bx bxl-github"></i>
+                        View project
+                        <i class="bx bx-up-arrow-alt"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Project selection -->
+
+            <div class="project-selector"
+                 id="projectSelector"
+                 aria-label="Select a project">
+
+            </div>
+
         </div>
 
     </div>
 
 </section>
+
+
+
+<!-- CONTACT -->
 
 <section class="contact" id="contact">
-    <h2 class="heading">Contact <span>Me</span></h2>
 
-    <form action="https://formspree.io/f/mlgpnopv" method="POST">
+    <div class="contact-ambient"></div>
 
-    <div class="input-group">
+    <div class="contact-shell">
 
-        <div class="input-box">
-            <input type="text" name="name" placeholder="Full Name" required>
-            <input type="email" name="email" placeholder="Email" required>
-        </div>
+        <div class="contact-content reveal">
 
-        <div class="input-box">
-            <input type="number" name="phone" placeholder="Phone Number">
-            <input type="text" name="subject" placeholder="Subject">
+            <div class="contact-availability">
+                <span class="status-dot"></span>
+                Open to final-year internships · February 2027
+            </div>
+
+            <h2 class="contact-title">
+                Let's build<br>
+                <span>something together.</span>
+            </h2>
+
+            <p class="contact-description">
+                Have an opportunity, a project or something
+                interesting to discuss? I'd love to hear
+                from you.
+            </p>
+
+            <div class="contact-actions">
+
+                <button type="button"
+                        class="contact-primary"
+                        onclick="openContactCard()">
+
+                    Get in touch
+                    <i class="bx bx-up-arrow-alt"></i>
+
+                </button>
+
+                <button type="button"
+                        class="contact-secondary"
+                        id="copyEmailButton">
+
+                    <i class="bx bx-copy"></i>
+
+                    <span id="copyEmailText"
+                          aria-live="polite">
+                        Copy email
+                    </span>
+
+                </button>
+
+            </div>
+
+            <div class="contact-socials">
+
+                <a href="https://linkedin.com/in/mohamed-reda-ez-zouhry"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    <i class="bx bxl-linkedin-square"></i>
+                    LinkedIn
+                    <i class="bx bx-up-arrow-alt"></i>
+
+                </a>
+
+                <a href="https://github.com/bk201-dev"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    <i class="bx bxl-github"></i>
+                    GitHub
+                    <i class="bx bx-up-arrow-alt"></i>
+
+                </a>
+
+                <a href="Mohamed_Reda_EZ-ZOUHRY_CV_English_Original_Design.pdf"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    <i class="bx bx-file"></i>
+                    Résumé
+                    <i class="bx bx-up-arrow-alt"></i>
+
+                </a>
+
+            </div>
+
         </div>
 
     </div>
 
-    <div class="input-group-2">
-        <textarea name="message" placeholder="Your Message" cols="30" rows="10" required></textarea>
-        <input type="submit" value="Send Message" class="btn">
-    </div>
-
-</form>
 </section>
+
+<!-- FOOTER -->
 
 <footer class="footer">
 
-    <div class="social-icons">
-        <a href="https://github.com/bk201-dev">
-            <i class="bx bxl-github"></i>
+    <div class="footer-shell">
+
+        <a href="#home"
+           class="footer-brand"
+           aria-label="Home">
+
+            MR<span>.</span>
+
         </a>
 
-        <a href="https://linkedin.com/in/mohamed-reda-ez-zouhry">
-            <i class="bx bxl-linkedin-square"></i>
+        <p class="footer-copyright">
+            © 2026 Mohamed Reda Ez-Zouhry
+        </p>
+
+        <a href="#home"
+           class="back-to-top"
+           aria-label="Back to top">
+
+            <i class="bx bx-up-arrow-alt"></i>
+
         </a>
 
-        
     </div>
-
-    <ul class="list">
-    <li>
-        <a href="#">FAQ</a>
-    </li>
-
-    <li>
-        <a href="#services">Services</a>
-    </li>
-
-    <li>
-        <a href="#about">About Me</a>
-    </li>
-
-    <li>
-        <a href="#projects">Projects</a>
-    </li>
- 
-    <li>
-        <a href="#contact">Contact</a>
-    </li>
-</ul>
-
-<p class="copyright">
-    © Mohamed Reda Ez-zouhry | All Rights Reserved
-</p>
 
 </footer>
 
 
-   <div class="contact-card" id="contactCard">
-    <div class="contact-card-content">
-        <span class="close-card" onclick="closeContactCard()">&times;</span>
 
-        <i class='bx bx-user-circle'></i>
-        <h3>Contact Me</h3>
+   
+<!-- CONTACT FORM POPUP -->
 
-        <p class="contact-line">
-            <a href="tel:+212642715574">
-                <i class='bx bx-phone-call'></i> +212 642 715 574
-            </a>
-        </p>
+<div class="contact-card" id="contactCard">
 
-        <p class="contact-line">
+    <div class="contact-card-content"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="contactFormTitle">
+
+        <button type="button"
+                class="close-card"
+                onclick="closeContactCard()"
+                aria-label="Close contact form">
+
+            <i class="bx bx-x"></i>
+
+        </button>
+
+        <div class="contact-form-header">
+
+            <h3 id="contactFormTitle">
+                Get in <span>touch.</span>
+            </h3>
+
+            <p>
+                Tell me what's on your mind.
+            </p>
+
+        </div>
+
+        <form id="portfolioContactForm"
+              action="https://formspree.io/f/mlgpnopv"
+              method="POST">
+
+            <div class="contact-field">
+
+                <label for="contactName">Name</label>
+
+                <input type="text"
+                       id="contactName"
+                       name="name"
+                       placeholder="Your name"
+                       autocomplete="name"
+                       required>
+
+            </div>
+
+            <div class="contact-field">
+
+                <label for="contactEmailInput">Email</label>
+
+                <input type="email"
+                       id="contactEmailInput"
+                       name="email"
+                       placeholder="Your email address"
+                       autocomplete="email"
+                       required>
+
+            </div>
+
+            <div class="contact-field">
+
+                <label for="contactMessage">Message</label>
+
+                <textarea id="contactMessage"
+                          name="message"
+                          placeholder="How can I help?"
+                          rows="5"
+                          required></textarea>
+
+            </div>
+
+            <button type="submit"
+                    class="contact-submit"
+                    id="contactSubmit">
+
+                <span>Send message</span>
+                <i class="bx bx-send"></i>
+
+            </button>
+
+            <p id="contactFormStatus"
+               class="contact-form-status"
+               role="status"
+               aria-live="polite"></p>
+
+        </form>
+
+        <div class="contact-form-bottom">
+
+            Prefer email?
+
             <a href="mailto:m.reda.ezzouhry@gmail.com">
-                <i class='bx bx-envelope'></i> m.reda.ezzouhry@gmail.com
+                Email me directly
+                <i class="bx bx-up-arrow-alt"></i>
             </a>
-        </p>
+
+        </div>
+
     </div>
-</div> 
+
+</div>
+ 
 
     <script src="script.js"></script>
   </body>
