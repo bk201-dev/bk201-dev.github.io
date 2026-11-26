@@ -28,10 +28,27 @@
         <a href="#projects">Projects</a>
     </nav>
 
-    <button class="gradient-btn" onclick="openContactCard()">
+    <div class="header-actions">
+
+    <button type="button"
+            class="terminal-trigger"
+            id="terminalTrigger"
+            aria-label="Open Engineering Mode"
+            title="Engineering Mode">
+
+        <i class="bx bx-terminal"></i>
+
+    </button>
+
+    <button class="gradient-btn"
+            onclick="openContactCard()">
+
         Let's talk
         <i class="bx bx-up-arrow-alt"></i>
+
     </button>
+
+</div>
 
     <button id="menu-icon"
             class="bx bx-menu"
@@ -1242,6 +1259,169 @@
             </a>
 
         </div>
+
+    </div>
+
+</div>
+
+
+<!-- ENGINEERING MODE -->
+
+<div class="terminal-overlay" id="terminalOverlay" hidden>
+
+    <div class="terminal-window"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="terminalTitle">
+
+        <!-- Terminal header -->
+
+        <div class="terminal-header">
+
+            <div class="terminal-controls">
+                <span class="terminal-red"></span>
+                <span class="terminal-yellow"></span>
+                <span class="terminal-green"></span>
+            </div>
+
+            <span id="terminalTitle">
+                MR — Engineering Mode
+            </span>
+
+            <button type="button"
+                    id="terminalClose"
+                    class="terminal-close"
+                    aria-label="Close terminal">
+
+                <i class="bx bx-x"></i>
+
+            </button>
+
+        </div>
+
+        <!-- Terminal screen -->
+
+        <div class="terminal-screen" id="terminalScreen">
+
+            <pre class="terminal-logo">
+███╗   ███╗██████╗
+████╗ ████║██╔══██╗
+██╔████╔██║██████╔╝
+██║╚██╔╝██║██╔══██╗
+██║ ╚═╝ ██║██║  ██║
+╚═╝     ╚═╝╚═╝  ╚═╝</pre>
+
+            <p class="terminal-version">
+                ENGINEERING INTERFACE · V1.0
+            </p>
+
+            <div id="terminalOutput" aria-live="polite"></div>
+
+            <!-- Command input -->
+
+            <form class="terminal-input-line"
+                  id="terminalForm">
+
+                <label for="terminalInput"
+                       class="terminal-prompt">
+
+                    visitor@mr:~$
+
+                </label>
+
+                <input type="text"
+                       id="terminalInput"
+                       aria-label="Terminal command"
+                       autocomplete="off"
+                       autocapitalize="off"
+                       spellcheck="false">
+
+            </form>
+
+        </div>
+
+        <!-- Status bar -->
+
+        <div class="terminal-footer">
+
+            <span class="terminal-status">
+                <span></span>
+                System online
+            </span>
+
+            <div class="terminal-shortcuts">
+    <span><kbd>TAB</kbd> Autocomplete</span>
+    <span><kbd>↑↓</kbd> History</span>
+    <span><kbd>ESC</kbd> Exit</span>
+</div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ENGINEERING LAB -->
+
+<div class="lab-overlay" id="labOverlay" hidden>
+
+    <div class="lab-window"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="labTitle">
+
+        <div class="lab-header">
+
+            <div>
+                <h2 id="labTitle">
+                    Engineering Lab<span>.</span>
+                </h2>
+
+                <p>Explore. Experiment. Understand.</p>
+            </div>
+
+            <button type="button"
+                    id="labClose"
+                    class="lab-close"
+                    aria-label="Close Engineering Lab">
+
+                <i class="bx bx-x"></i>
+
+            </button>
+
+        </div>
+
+        <div class="lab-navigation">
+
+            <button class="lab-tab active"
+                    data-lab="logic">
+
+                <i class="bx bx-chip"></i>
+                Digital Logic
+
+            </button>
+
+            <button type="button"
+        class="lab-tab"
+        data-lab="signal">
+
+    <i class="bx bx-pulse"></i>
+    Signal Studio
+
+</button>
+
+            <button type="button"
+        class="lab-tab"
+        data-lab="processor">
+
+    <i class="bx bx-code-alt"></i>
+    Processor Lab
+
+</button>
+
+        </div>
+
+        <div class="lab-content" id="labContent"></div>
 
     </div>
 
